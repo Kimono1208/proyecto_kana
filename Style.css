@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #469ea8;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    margin: 30px;
+}
+
+.pepa{
+    width: 800px; 
+    z-index: -10;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #00cccc;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: navajowhite 3px;
+    border: black 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+    font-weight: 100px;
+    font-size: 18px;
+    margin-left: 25px;
+    margin: auto;
+}
+
+.button:last-child {
+    margin-left: auto;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #6ffcc6;
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #6ffcc6;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+}
+
+body {
+    margin: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+header {
+    background-color: #00cccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: #777;
+    font-weight: 100px;
+    font-size: 45px;
+}
+
+section {
+    margin: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+section h2:before {
+    content: "•";
+    color: #99ffcc;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contacto {
+    background-color: #6ffcc6;
+    padding: 50px;
+}
+
+footer {
+    background-color: #00cccc;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
